@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<br>
-    <br>Hello, i'm winston(wildbery).</br> I hope you enjoy my projects. Bye!</br>  seikmanse12@naver.com</p>
-</body>
+  </head>
+  <body>
+    <script src="//unpkg.com/alpine.js" defer></script>
+    <div x-data="{ random : 0 }">
+      <button x-on:click="random = Math.random() * (6 - 1) + 1;">
+        Roll dice
+      </button>
+      <p x-text="count"></p>
+    </div>
+  </body>
 </html>
