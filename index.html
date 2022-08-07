@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
-    <script src="//unpkg.com/alpine.js" defer></script>
-    <div x-data="{ random : 0 }">
-      <button x-on:click="random = Math.random() * (6 - 1) + 1;">
+    <div x-data="{ random: 0 }">
+      <button
+        x-on:click="random = Math.floor(Math.random() * (Math.floor(6) - Math.ceil(1))) + Math.ceil(1);"
+      >
         Roll dice
       </button>
-      <p x-text="random"></p>
+      <span x-text="random"></span>
     </div>
   </body>
 </html>
