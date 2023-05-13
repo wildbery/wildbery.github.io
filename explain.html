@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+    <title>소개</title>
+    <style>
+      .banner {
+        background-color: #f7d600;
+        color: rgb(0, 0, 0);
+        font-size: 75px;
+        text-align: center;
+        vertical-align: top;
+      }
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .nav {
+        list-style: none;
+        vertical-align: middle;
+      }
+      .nav_a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 15px;
+      }
+      nav {
+        overflow: hidden;
+        background-color: #e5c600;
+        margin: 0px;
+        width: 100%;
+        text-align: center;
+      }
+      nav > ul {
+        display: inline-block;
+      }
+      nav > ul li {
+        float: left;
+        padding: 0 100px;
+      }
+      .ban_a {
+        text-decoration: none;
+        color: #000000;
+      }
+      .explain {
+        size: 100%;
+        text-align: center;
+      }
+      .mob {
+        display: none;
+      }
+      @media (max-width: 1197px) {
+        .nav_a {
+          width: 0px;
+          height: 0px;
+          display: none;
+        }
+        nav > ul li {
+          padding: 0 50px;
+        }
+        .mob {
+          display: inline-block;
+        }
+      }
+
+      @media (max-width: 300px) {
+        .banner {
+          font-size: 48px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="banner">
+      <img src="./assets/1295470.svg" style="width: 80px; height: 80px" /><a
+        class="ban_a"
+        href="explain.html"
+      >
+        놀이터</a
+      >
+    </h1>
+    <nav>
+      <ul>
+        <!--프로필 수정, 회원가입, 로그인 구현-->
+        <li class="mob nav">
+          <span class="material-symbols-outlined"> menu </span>
+        </li>
+        <li class="nav">
+          <a href="editProfile.html" class="nav_a"
+            ><span class="material-symbols-outlined" title="프로필 수정">
+              person
+            </span></a
+          >
+        </li>
+        <li class="nav">
+          <a href="signUp.html" class="nav_a"
+            ><span class="material-symbols-outlined" title="회원가입">
+              switch_account
+            </span></a
+          >
+        </li>
+        <li class="nav">
+          <a href="signIn.html" class="nav_a"
+            ><span class="material-symbols-outlined" title="로그인">
+              login
+            </span></a
+          >
+        </li>
+        <li class="nav">
+          <a href="index.html" class="nav_a"
+            ><span class="material-symbols-outlined" title="홈으로">
+              home
+            </span></a
+          >
+        </li>
+        <li class="nav">
+          <img
+            src="./assets/1295470.svg"
+            alt="프로필 사진"
+            style="width: 20px; height: 20px"
+          />
+        </li>
+      </ul>
+    </nav>
+    <div class="explain">
+      <h1>놀이터</h1>
+      <p>
+        제가 이 사이트를 만든 이유는 아무 주제 없는 자유게시판이 있다면 어떨까
+        하는 호기심에 제작되었습니다.<br />
+        말 그대로 '자유'게시판을 만든 것이죠. 관리자의 아무런 개입도 없습니다.
+        분쟁을 하거나, 서로 까내리거나, 아님 자유롭게 토론을 하거나.<br />
+        여기에서 사람들이 어떤 글을 올리고, 어떤 이야기를 하고, 어떤 행동을 할지
+        실험의 목적도 있습니다.<br />
+        물론 욕설이나 이런건 막아두었지만, 어느정도 선만 지키면 아무 행동이나 할
+        수 있습니다.<br />
+      </p>
+      <p>
+        <br />
+        일반적인 커뮤니티와 달리, 카테고리가 존재하지 않습니다. 아무 이야기를
+        해도 상관이 없는것이죠.<br />
+        어떤 쓰잘데기 없는 글을 써도 괜찮습니다! 여긴 '자유'게시판이니까요.<br />
+        놀이터를 재미있게 즐겨주세요!<strong> -제작자 올림</strong>
+      </p>
+    </div>
+  </body>
+</html>
