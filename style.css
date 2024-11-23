@@ -1,0 +1,30 @@
+* {
+    font-family: Consolas;
+}
+nav {
+    float: left;
+    width: 25%;
+}
+html, body {
+    height: 100%;
+}
+li {
+    height: 100%;
+    border-right: solid black;
+}
+ul {
+    border: solid black;
+    border-right: none;
+    margin-top: 0;
+    padding-top: 16px;
+    margin-bottom: 0;
+    padding-bottom: 16px;
+}
+.content {
+    margin-left: 30%;
+}
+chessppdownload a button{
+    width: 100px;
+    height: 50px;
+    background: url("./assets/chessppdownload.png");
+}
