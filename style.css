@@ -1,22 +1,39 @@
 * {
-    font-family: Consolas;
+    font-family: "Consolas";
 }
 nav {
     float: left;
     width: 25%;
+    height: auto;
 }
 html, body {
     height: 100%;
 }
 li {
     height: 100%;
+    border-image-slice: 23 23 23 23;
+    border-image-width: 20px 20px 20px 20px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: stretch stretch;
+    border-image-source: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPdSURBVHhe7Z1Na1RnGIavGbVJcRWNXRS6SIlJFONH02WhCBaNWwVBt+71Nwi2uHDlD7AYFEX7DwrittQWmrTV1s8o0Y3ixypzkthFn8Hx4dWcj5nJ48x9wQ2Z95w558xz5Zz3PWcG3hrVqAGTwF5gCpgAvgA2AZ/4lXuMBvAceATcAm4C14FZ4I1fudOMAKeB+7Zz5W3uW21GfNE6wShwEVhKHIjybpaAS8BWX8R2MGDWFxM7Vj6cReAHYNAXtSwTwB+JHSnFMgts88Utyn7gRWLjSrm8tJqW4pCNJPxGlWppAId9sVdjv2R0NA3ggC/6+5jQZaoreZmnTxlQB97VzPnR17rWF8CpMtc3UZrPgA3Az82GWsvCUeDPPnjkEY0M2AH8gztDzgG7W16L7rAO2AL8RMsZMgL8m7iEie6wAowBd+vWcFwy1pS6OQA7S9rx1HYJmAGmgWHXP/UaNfuMB+wzZ4l6FM3DZs12JhYWze0+7392WQ18XYpmN8CJxIIiuW2dUr8zbF9U+foUyUmAC4kFebPU52eGZ2fFy9dFgF8SC/Jmxh+R4MdEnfLmJsCTxIK8mfZHI/guUae8eUrFbwGH/dEINiXqlDeLNfujLPWK7+9VStekeWNYltI7FmmqChFtRkKCISHBkJBgSEgwJCQYEhIMCQmGhARDQoIhIcGQkGBISDAkJBgSEgwJCYaEBENCgiEhwZCQYEhIMCQkGBISDAkJhoQEQ0KCISHBkJBgSEgwJCQYEhIMCQmGhARDQoIhIcGQkGBISDAkJBgSEgwJCYaEBENCgiEhwZCQYEhIMCQkGBISDAkJhoQEQ0KCISHBkJBgSEgwqgrp5RkQ1oS6TeFWls2+QTDkGwqQ1W0K6rJM+QZRqSbP68Bj31qAo75BcMw3FGCBitNVZDaZififyarTVdSB3/xWC7AeuKy+BKwGV6wmZfkV+w/3pormL5vMpF+ZtBr4uhTNV9jQ9UFiYdFkwHlgX8WRxsfCkH3W8xUvU83Mt95GfJ9YQeluztBi5Eub+lNzGa4NK8A4cKd5p34PuOpWEt3jGnAH9+hjDJjV5MRdJ7MB0S3cJeoZsBH4pqVNdJ6zduuQZNDOEt/hKJ3JHPCpl+DZDrxKvFlpb17bPOq5mG7T2FpJJwMO+qKvxhFJ6Ugyq20ppu3U8htVyuV1O2ZH3W6dj9+4UixzRfqM1Ri0W/tGYkfKh9Ow2q06mirDuI2ZlxM7Vt7Nsj2On/BF7ASjZn0+cSD9nnmrzagvWh6q/mqkBuwBvgW+BrYBn9uMyRv8yj1GZr9HWAD+ti+XbgC/m5hS/AeyDbQdddq6pQAAAABJRU5ErkJggg==");
+    border-style: solid;
+    padding: 20px;
 }
 ul {
-    border: solid black;
     margin-top: 0;
     padding-top: 16px;
     margin-bottom: 0;
     padding-bottom: 16px;
+}
+li ul {
+    border-top : 1px solid black;
+}
+li ul:first-child {
+    border-top : 0px solid transparent;
+}
+a {
+    color: black;
+    text-decoration: none;
 }
 .content {
     margin-left: 30%;
